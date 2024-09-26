@@ -147,14 +147,14 @@ const Fleet = () => {
       {/* Show saved data */}
       {savedData.length > 0 && (
         <div className="saved-data">
-          <h3>Saved Fleet Data</h3>
+          <h3 className='titles'>Saved Fleet Data</h3>
           {savedData.map((entry, index) => (
             <div key={index}>
-              <p><strong>Dumper:</strong> {entry.dumper}</p>
-              <p><strong>Tire Type:</strong> {entry.tireType}</p>
-              <p><strong>Tube Installation Date:</strong> {entry.tubeInstallationDate}</p>
-              <p><strong>Tire Installation Date:</strong> {entry.tireInstallationDate}</p>
-              <p><strong>Tire ID:</strong> {entry.tireId}</p>
+              <p style={{color:'white'}}><strong>Dumper:</strong> {entry.dumper}</p>
+              <p style={{color:'white'}}><strong>Tire Type:</strong> {entry.tireType}</p>
+              <p style={{color:'white'}}><strong>Tube Installation Date:</strong> {entry.tubeInstallationDate}</p>
+              <p style={{color:'white'}}><strong>Tire Installation Date:</strong> {entry.tireInstallationDate}</p>
+              <p style={{color:'white'}}><strong>Tire ID:</strong> {entry.tireId}</p>
             </div>
           ))}
         </div>
